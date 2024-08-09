@@ -17,15 +17,19 @@ This document provides comprehensive information about the Task Management API, 
 
 ### Example `.env` File
 
-```
 MONGODB_URI=mongodb://localhost:27017/taskDB
-```
 
-3. Run the application:
 
-   ```go
-   go run main.go
-   ```
+
+### Running the Application
+
+1. Open your terminal and navigate to the root directory of your project.
+
+2. Run the following command to start the application:
+
+   ```bash
+   go run .
+
 
 The server will start on `http://localhost:8000`.
 
