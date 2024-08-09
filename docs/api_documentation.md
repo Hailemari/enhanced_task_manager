@@ -22,10 +22,10 @@ MONGODB_URI=mongodb://localhost:27017/taskDB
 ```
 
 3. Run the application:
-
-   ```go
-   go run main.go
-   ```
+  go to the root directory of the app
+  ```
+    go run main
+  ```
 
 The server will start on `http://localhost:8000`.
 
