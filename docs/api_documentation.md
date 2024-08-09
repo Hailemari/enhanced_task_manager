@@ -1,20 +1,29 @@
 ```markdown
 # Task Management API Documentation
 
-This document provides information about the Task Management API, which uses MongoDB for persistent data storage.
+This document provides comprehensive information about the Task Management API, which uses MongoDB for persistent data storage.
+
+## Prerequisites
+
+- Go 1.18 or later
+- MongoDB 4.4 or later
+- [Gin](https://github.com/gin-gonic/gin) framework for Go
+- [MongoDB Go Driver](https://pkg.go.dev/go.mongodb.org/mongo-driver)
 
 ## Setup
 
 1. Ensure you have MongoDB installed and running.
-2. Set the `MONGODB_URI` environment variable in a `.env` file:
+2. Set the `MONGODB_URI` environment variable in a `.env` file.
 
-   ```
-   MONGODB_URI=mongodb://localhost:27017/taskDB
-   ```
+### Example `.env` File
+
+```
+MONGODB_URI=mongodb://localhost:27017/taskDB
+```
 
 3. Run the application:
 
-   ```
+   ```go
    go run main.go
    ```
 
@@ -114,9 +123,25 @@ The API returns appropriate HTTP status codes and error messages in the response
 - 404 Not Found: When a requested resource doesn't exist
 - 500 Internal Server Error: For server-side errors
 
-## Notes
+## Testing the API
 
-- Ensure that the MongoDB connection string in the `.env` file is correct and points to your MongoDB instance.
-- The API uses the Gin framework for routing and request handling.
-- All date-time values are in ISO 8601 format.
+Use [Postman](https://www.postman.com/) or [cURL](https://curl.se/) to test the API endpoints. Here's an example of how to test the `Get All Tasks` endpoint using cURL:
+
+```
+curl -X GET http://localhost:8000/tasks
+```
+
+The response should be a JSON array of tasks.
+
+## MongoDB Inspection
+
+You can use [MongoDB Compass](https://www.mongodb.com/products/compass) to inspect the data in your MongoDB instance.
+
+## API Versioning
+
+The current API version is `v1`. Future updates and changes may introduce new versions.
+
+## Authorization
+
+Currently, the API is open and does not require authentication. In future versions, authorization may be implemented.
 ```
