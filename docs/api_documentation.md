@@ -1,4 +1,3 @@
-```markdown
 # Task Management API Documentation
 
 This document provides comprehensive information about the Task Management API, which uses MongoDB for persistent data storage.
@@ -22,7 +21,7 @@ MONGODB_URI=mongodb://localhost:27017/taskDB
 ```
 
 3. Run the application:
-  go to the root directory of the app
+  go to the root directory of the app and run
   ```
     go run main
   ```
@@ -144,4 +143,3 @@ The current API version is `v1`. Future updates and changes may introduce new ve
 ## Authorization
 
 Currently, the API is open and does not require authentication. In future versions, authorization may be implemented.
-```
