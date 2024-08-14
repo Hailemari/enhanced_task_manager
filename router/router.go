@@ -1,8 +1,8 @@
 package router
 
 import (
-	"github.com/Hailemari/task_manager/controllers"
 	"github.com/gin-gonic/gin"
+	"github.com/Hailemari/enhanced_task_manager/controllers"
 )
 
 func SetupRouter() *gin.Engine {

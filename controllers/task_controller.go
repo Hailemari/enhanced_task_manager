@@ -4,10 +4,10 @@ import (
 	"net/http"
     "io"
     "bytes"
-	"github.com/Hailemari/task_manager/data"
-	"go.mongodb.org/mongo-driver/mongo"
-	"github.com/Hailemari/task_manager/models"
 	"github.com/gin-gonic/gin"
+	"go.mongodb.org/mongo-driver/mongo"
+	"github.com/Hailemari/enhanced_task_manager/data"
+	"github.com/Hailemari/enhanced_task_manager/models"
 )
 
 func GetTasks(ctx *gin.Context) {
