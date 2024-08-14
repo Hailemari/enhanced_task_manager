@@ -1,11 +1,11 @@
 package main
 
 import (
-	"log"
 	"os"
-	"github.com/Hailemari/task_manager/data"
-	"github.com/Hailemari/task_manager/router"
+	"log"
 	"github.com/joho/godotenv"
+	"github.com/Hailemari/enhanced_task_manager/data"
+	"github.com/Hailemari/enhanced_task_manager/router"
 
 )
 
